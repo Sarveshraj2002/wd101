@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Application Registration</title>
+  <link rel="stylesheet" href="style.css" />
+  <img src="image.jpg" alt="imaGE" style="width:150px;">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+
+  <div class="center">
+    <h1>REGISTRATION APPLICATION FOR STUDENTS</h1>
+ 
+  </br>
+  </br>
+
+    <form id="registration-form-students" style="border: 5%">
+      <div>
+        <label for="name">Name:</label>
+        <input type="text" placeholder="Enter name" id="name" required />
+        <span aria-hidden="true" class="required" style="color: rgb(170, 189, 62);">*</span>
+      </div>
+      <br />
+      <div>
+        <label for="email">Email:</label>
+        <input type="email" placeholder="Enter your e-mail " id="email" required />
+        <span aria-hidden="true" class="required" style="color: rgb(91, 165, 59);">*</span>
+      </div>
+      <br />
+      <div>
+        <label for="password">Password:</label>
+        <input type="password" placeholder="Enter security code" id="password" required />
+        <span aria-hidden="true" class="required" style="color: rgb(158, 194, 51);">*</span>
+      </div>
+      <br />
+      <div>
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" required />
+        <span aria-hidden="true" class="required" style="color: red;">*</span>
+      </div>
+      <br />
+      <div>
+        <label>
+          <input type="checkbox" id="accepted-terms" required />
+         I Accepted All the terms and conditions 
+        </label>
+      </div>
+      <br />
+      <button type="submit" style="background-color: blue; ">Submit</button>
+    </form>
+  </div>
+
+  </br>
+  </br>
+
+  <div class="center">
+    <h2>List of Registered Peoples</h2>
+
+    <table id="entries-body-table-sarvesh">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Password</th>
+          <th>Dob</th>
+          <th>Accepted terms?</th>
+        </tr>
+      </thead>
+      <tbody id="entries-table-body-center-sarvesh"></tbody>
+    </table>
+    <script src="index.js"></script>
+  </div>
+
+</body>
+
+</html>
